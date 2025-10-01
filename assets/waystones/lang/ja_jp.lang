@@ -1,0 +1,42 @@
+tile.waystones:waystone.name=ウェイストーン
+
+item.waystones:warp_scroll.name=ワープの巻物
+item.waystones:warp_scroll_bound.name=ワープの巻物 (結合済み)
+item.waystones:return_scroll.name=帰還の巻物
+item.waystones:warp_stone.name=ワープストーン
+item.waystones:bound_scroll.name=結合済みの巻物
+
+itemGroup.waystones=ウェイストーン
+
+waystones:noDimensionWarp=異なる世界間ではワープできません。
+waystones:waystoneBroken=結合されたウェイストーンが移動または破壊されました。
+waystones:returnImpossible=まだウェイストーンを起動していません。
+waystones:scrollNotBound=この巻物はウェイストーンに結合されていません。
+waystones:stoneNotCharged=ワープストーンがまだ完全に充填されていません。
+waystones:activatedWaystone=ウェイストーンを起動: %s
+waystones:nameOccupied=名前 %s は既に使用されています。
+waystones:notTheOwner=ウェイストーンの名前は設置者のみが変更できます。
+waystones:creativeRequired=グローバルウェイストーンを編集するにはクリエイティブモードである必要があります。
+waystones:scrollBound=巻物を結合: %s
+
+gui.waystones:current_location=現在地:
+gui.waystones:warpStone.selectDestination=目的地を選択:
+gui.waystones:warpStone.nextPage=次へ
+gui.waystones:warpStone.previousPage=前へ
+gui.waystones:confirmReturn=本当にこのウェイストーンにワープしますか?
+gui.waystones:confirmReturn.boundTo=結合先: %s
+gui.waystones:confirmReturn.noWaystoneActive=起動中のウェイストーンがありません。
+gui.waystones:editWaystone.enterName=ウェイストーンの名前を入力:
+gui.waystones:editWaystone.isGlobal=グローバル
+
+tooltip.waystones:cooldownLeft=クールダウン: %d秒
+tooltip.waystones:boundTo=結合先: %s
+tooltip.waystones:none=なし
+tooltip.waystones:returnToWaystone=ウェイストーンへ帰還
+tooltip.waystones:openWaystoneMenu=ウェイストーンメニューを開く
+tooltip.waystones:levelRequirement=必要レベル: %d
+
+stat.waystones:waystonesActivated=起動したウェイストーン数
+
+waystones.general.globalinterdimension=異次元間テレポート (グローバルウェイストーン)
+waystones.worldgen.customnames=カスタム名
