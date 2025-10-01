@@ -9,3 +9,6 @@ Minecraft プライベートパック用の翻訳リソースパック
 - Bundles Backport
 - Quark RoTN
 - Waystones
+- millenaire
+- pam's harvestcraft
+- pam's brewcraft
