@@ -19,3 +19,4 @@ Minecraft プライベートパック用の翻訳リソースパック
 - natura legacy
 - CBMultipart
 - TInkersAntique
+- storage drawer
