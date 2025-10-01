@@ -15,3 +15,7 @@ Minecraft プライベートパック用の翻訳リソースパック
 - ice and fire rotn
 - techguns
 - celeritas
+- mutant beasts legacy
+- natura legacy
+- CBMultipart
+- TInkersAntique
