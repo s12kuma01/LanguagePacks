@@ -20,3 +20,4 @@ Minecraft プライベートパック用の翻訳リソースパック
 - CBMultipart
 - TInkersAntique
 - storage drawer
+- mrcrayfish vehicle
