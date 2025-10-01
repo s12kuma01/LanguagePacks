@@ -9,8 +9,8 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    # コミットメッセージに "bump to version" が含まれている場合のみ実行
-    if: contains(github.event.head_commit.message, 'bump to version')
+    # コミットメッセージが "bump to x.y.z" の形式の場合のみ実行
+    if: startsWith(github.event.head_commit.message, 'bump to ')
 
     steps:
       - name: Checkout code
@@ -20,8 +20,8 @@ jobs:
         id: extract_version
         run: |
           # コミットメッセージからバージョン番号を抽出
-          # 例: "bump to version 1.2.3" -> "1.2.3"
-          VERSION=$(echo "${{ github.event.head_commit.message }}" | grep -oP 'bump to version \K[0-9]+\.[0-9]+\.[0-9]+')
+          # 例: "bump to 1.2.3" -> "1.2.3"
+          VERSION=$(echo "${{ github.event.head_commit.message }}" | grep -oP 'bump to \K[0-9]+\.[0-9]+\.[0-9]+')
           if [ -z "$VERSION" ]; then
             echo "バージョン番号が見つかりません"
             exit 1
