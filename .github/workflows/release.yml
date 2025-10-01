@@ -1,0 +1,63 @@
+name: Create Release
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    # コミットメッセージに "bump to version" が含まれている場合のみ実行
+    if: contains(github.event.head_commit.message, 'bump to version')
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Extract version from commit message
+        id: extract_version
+        run: |
+          # コミットメッセージからバージョン番号を抽出
+          # 例: "bump to version 1.2.3" -> "1.2.3"
+          VERSION=$(echo "${{ github.event.head_commit.message }}" | grep -oP 'bump to version \K[0-9]+\.[0-9]+\.[0-9]+')
+          if [ -z "$VERSION" ]; then
+            echo "バージョン番号が見つかりません"
+            exit 1
+          fi
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "リリースバージョン: $VERSION"
+
+      - name: Create ZIP file
+        run: |
+          # リソースパックをZIP形式で圧縮
+          zip -r LanguagePacks-${{ steps.extract_version.outputs.version }}.zip . \
+            -x "*.git*" \
+            -x "*.github*" \
+            -x "*.md" \
+            -x "LICENSE"
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ steps.extract_version.outputs.version }}
+          name: Release ${{ steps.extract_version.outputs.version }}
+          body: |
+            ## LanguagePacks v${{ steps.extract_version.outputs.version }}
+
+            日本語翻訳リソースパック
+
+            ### インストール方法
+            1. ZIPファイルをダウンロード
+            2. `.minecraft/resourcepacks/` フォルダに配置
+            3. Minecraftでリソースパックを有効化
+
+            ### 変更内容
+            ${{ github.event.head_commit.message }}
+          files: |
+            LanguagePacks-${{ steps.extract_version.outputs.version }}.zip
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
