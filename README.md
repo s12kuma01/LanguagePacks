@@ -12,3 +12,6 @@ Minecraft プライベートパック用の翻訳リソースパック
 - millenaire
 - pam's harvestcraft
 - pam's brewcraft
+- ice and fire rotn
+- techguns
+- celeritas
