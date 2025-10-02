@@ -976,12 +976,12 @@ gui.general.temperature.celsius=%s°C
 gui.general.temperature.kelvin=%sK
 
 # Creative Tabs
-itemGroup.TinkerGeneral=Tinkers' 一般アイテム
-itemGroup.TinkerTools=Tinkers' ツール
-itemGroup.TinkerToolParts=Tinkers' ツールパーツ
-itemGroup.TinkerSmeltery=Tinkers' 製錬所
-itemGroup.TinkerWorld=Tinkers' ワールド
-itemGroup.TinkerGadgets=Tinkers' ガジェット
+itemGroup.TinkerGeneral=Tinkers' Antiques - 一般
+itemGroup.TinkerTools=Tinkers' Antiques - ツール
+itemGroup.TinkerToolParts=Tinkers' Antiques - パーツ
+itemGroup.TinkerSmeltery=Tinkers' Antiques - 製錬所
+itemGroup.TinkerWorld=Tinkers' Antiques - ワールド
+itemGroup.TinkerGadgets=Tinkers' Antiques - ガジェット
 
 # Crafting Station
 gui.craftingstation.name=クラフトステーション

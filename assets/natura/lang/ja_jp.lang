@@ -590,7 +590,7 @@ entity.nitrocreeper.name=ニトロクリーパー
 #     GUIs     #
 ################
 
-itemGroup.natura.tab=ナチュラ
+itemGroup.natura.tab=Natura Legacy
 
 msg.natura.respawn_obelisk.activate=オベリスクが起動しました。スポーン地点が設定されました!
 msg.natura.respawn_obelisk.deactivate=オベリスクが非アクティブになりました。スポーン地点がリセットされました!

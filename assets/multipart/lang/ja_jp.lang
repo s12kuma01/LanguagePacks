@@ -2,7 +2,7 @@
 microblock.missing=次のマイクロブロックがこのクライアントにインストールされていません: %s
 multipart.missing=次のマルチパーツがこのクライアントにインストールされていません: %s
 
-itemGroup.microblockcbe=マイクロブロック
+itemGroup.microblockcbe=MicroBlocks
 
 item.microblockcbe:saw_stone.name=石のノコギリ
 item.microblockcbe:saw_iron.name=鉄のノコギリ

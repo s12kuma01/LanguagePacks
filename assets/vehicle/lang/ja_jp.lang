@@ -1,4 +1,4 @@
-itemGroup.tabVehicle=ビークル
+itemGroup.tabVehicle=Vehicles
 
 vehicle.engine_type.small.name=小型エンジン
 vehicle.engine_type.large.name=大型エンジン

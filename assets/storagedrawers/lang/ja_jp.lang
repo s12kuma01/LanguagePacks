@@ -1,7 +1,7 @@
 #PARSE_ESCAPES
 
-itemGroup.storagedrawers=ストレージドロワー
-itemGroup.storagedrawersSorting=ストレージドロワー - 仕分け
+itemGroup.storagedrawers=Storage Drawers
+itemGroup.storagedrawersSorting=Storage Drawers - 仕分け
 
 storagedrawers.container.drawers=引き出し
 storagedrawers.container.compDrawers=圧縮引き出し

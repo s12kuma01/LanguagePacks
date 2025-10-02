@@ -10,8 +10,8 @@
 
 #Item names
 
-itemGroup.millenaire=ミレニアム
-itemGroup.millenaire_content_creator=ミレニアム - コンテンツ
+itemGroup.millenaire=Millenaire
+itemGroup.millenaire_content_creator=Millenaire - クリエイター
 
 #The following items should not be translated
 #They are either proper names (the deniers)

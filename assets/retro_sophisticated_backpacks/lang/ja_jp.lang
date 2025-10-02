@@ -27,7 +27,7 @@ item.retro_sophisticated_backpacks.filter_upgrade.name=フィルターアップ�
 item.retro_sophisticated_backpacks.advanced_filter_upgrade.name=高度なフィルターアップグレード
 
 # Creative Tabs
-itemGroup.retro_sophisticated_backpacks.creative_tab=洗練されたバックパック
+itemGroup.retro_sophisticated_backpacks.creative_tab=Retro Sophisticated Backpacks
 
 # Keybinds
 retro_sophisticated_backpacks.key.open_backpack.desc=インベントリ内のバックパックを開く
