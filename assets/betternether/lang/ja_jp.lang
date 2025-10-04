@@ -16,7 +16,7 @@ item.stalagnate_bowl_apple.name=黒リンゴ
 item.stalagnate_bowl_mushroom.name=キノコシチュー
 item.stalagnate_bowl_wart.name=ウォートスープ
 
-itemGroup.better_nether=より良いネザー
+itemGroup.better_nether=Better Nether Continuation
 
 message.spawn_help=§c§lグロウストーンダストを持ってリスポーン地点を設定する必要があります
 message.spawn_set=§2§lリスポーン地点が設定されました
